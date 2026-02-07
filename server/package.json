@@ -1,0 +1,13 @@
+{
+  "name": "rarer-mods-server",
+  "version": "1.0.0",
+  "description": "WebSocket server for rarer.io-Mods",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}

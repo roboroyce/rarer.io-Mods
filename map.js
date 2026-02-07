@@ -935,7 +935,10 @@ const l = {
   fs = "#1c9254",
   gs = "#187e49",
   hs = 50,
-  ys = "wss://1e1693e4-df5d-4d76-aeee-998b7ce8fd53-00-26mi3xctqi8u9.kirk.replit.dev",
+  ys =
+    window.WS_URL ||
+    new URLSearchParams(window.location.search).get("ws") ||
+    `${window.location.protocol === "https:" ? "wss" : "ws"}://${window.location.host}/ws`,
   bs = "w",
   vs = "x",
   Mt = { blackCircle: bs, blackCircleShow: vs },
